@@ -139,9 +139,6 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor
 # Product
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
-# Qualcomm support
-BOARD_USES_QCOM_HARDWARE := true
-
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
