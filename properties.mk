@@ -169,11 +169,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pedometer=false \
     ro.hardware.sensors=aljeter
 
-# SoC
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
-    ro.soc.model=MSM8937
-
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM \

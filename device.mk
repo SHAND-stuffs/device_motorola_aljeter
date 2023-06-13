@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
+# Platform/Kernel
+TARGET_BOARD_PLATFORM := msm8937
+TARGET_KERNEL_VERSION := 4.9
+
 # Dynamic
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -238,10 +242,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8937
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sysfs
-
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -391,8 +391,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/qcom-caf/msm8996
+    $(LOCAL_PATH)
 
 # Thermal
 PRODUCT_COPY_FILES += \
