@@ -182,7 +182,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libminijail \
     libavservices_minijail \
-    libavservices_minijail.vendor \
     android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor
@@ -208,10 +207,6 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
-
-# IRQ balance
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -298,15 +293,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-egis.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-egis.idc
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power@1.2.vendor
-
-# Perf
-PRODUCT_PACKAGES+= \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
@@ -329,6 +315,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist.xml
+
+TARGET_COMMON_QTI_COMPONENTS += \
+    perf
 
 # RIL
 PRODUCT_PACKAGES += \
