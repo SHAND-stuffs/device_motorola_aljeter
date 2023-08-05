@@ -109,25 +109,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.enable.sglscale=1 \
-    debug.gralloc.gfx_ubwc_disable=0 \
-    debug.sf.enable_hwc_vds=0 \
+    debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=0 \
-    debug.cpurend.vsync=false \
-    debug.sf.disable_client_composition_cache=1 \
-    debug.sf.auto_latch_unsignaled=true \
+    debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
     vendor.display.disable_rotator_split=1 \
     vendor.display.disable_skip_validate=1 \
-    vendor.display.perf_hint_window=50 \
-    vendor.gralloc.enable_fb_ubwc=1
+    vendor.display.perf_hint_window=50
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-    ro.surface_flinger.max_virtual_display_dimension=4096 \
-    ro.surface_flinger.use_color_management=true
+    ro.surface_flinger.max_virtual_display_dimension=4096
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -146,13 +141,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bg_apps_limit=60
-
-# QTI
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.va_aosp.support=1
-
-PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.qti.va_odm.support=1
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \

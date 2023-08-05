@@ -71,11 +71,11 @@ TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-   $(DEVICE_PATH)/device_framework_compatibility_matrix.xml \
+   $(DEVICE_PATH)/configs/vintf/device_framework_compatibility_matrix.xml \
    vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml
 
 TARGET_FS_CONFIG_GEN += \
@@ -137,7 +137,7 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true

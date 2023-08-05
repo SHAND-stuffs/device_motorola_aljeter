@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "AljeterCarrierConfigOverlay",
+    vendor: true,
+    aaptflags: ["--keep-raw-values"],
+}

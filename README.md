@@ -1,6 +1,6 @@
 Copyright (C) 2019 The LineageOS Project
 
-Device Configuration for Moto G6 Play (AlJeter)
+Device Configuration for Moto G6 Play (aljeter)
 ==================================================
 
 The Motorola Moto G6 Play (codenamed _"aljeter"_) is a low range smartphone from Motorola mobility.
