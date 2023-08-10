@@ -3,13 +3,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.deep_buffer.media=true \
     audio.offload.min.duration.secs=60 \
     audio.offload.video=true \
-    persist.vendor.audio.dualmic.config=endfire \
-    persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicecomm=true \
-    persist.vendor.audio.fluence.voicerec=true \
     ro.config.max_starting_bg=8 \
     ro.config.vc_call_vol_steps=8 \
-    ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
     vendor.audio_hal.period_size=240 \
     vendor.audio.hw.aac.encoder=false \
@@ -37,6 +32,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb \
     persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb \
     persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
+
+# Audio Fluence
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.feature.fluence.enable=true \
+    persist.vendor.audio.fluence.speaker=false \
+    persist.vendor.audio.dualmic.config=endfire \
+    persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicecomm=true \
+    persist.vendor.audio.fluence.voicerec=true \
+    ro.vendor.audio.sdk.fluencetype=fluence
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
