@@ -13,6 +13,10 @@ LOCAL_OVERRIDES_PACKAGES := \
     YouTube \
     AndroidAutoStub \
     CarrierServices \
+    GoogleLocationHistory \
+    talkback \
+    PersonalSafety \
+    FilesPrebuilt \
     Turbo
 
 LOCAL_UNINSTALLABLE_MODULE := true
