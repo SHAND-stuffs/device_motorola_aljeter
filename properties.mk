@@ -69,7 +69,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cne.feature=1 \
     persist.vendor.mwqem.enable=1
 
 # Dalvik
@@ -96,15 +95,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp=false
-
-# IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.ims.disableIMSLogs=1 \
-    persist.vendor.ims.disableADBLogs=1 \
-    persist.vendor.ims.disableDebugDataPathLogs=1 \
-    persist.vendor.ims.disableDebugLogs=1 \
-    persist.vendor.ims.disableSigHandler=1 \
-    persist.vendor.ims.disableQXDMLogs=1
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -162,20 +152,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.aosp_usr_pref_sel=true \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.enableadvancedscan=false \
     persist.vendor.radio.hw_mbn_update=0 \
-    persist.vendor.radio.procedure_bytes=SKIP \
-    persist.vendor.radio.mt_sms_ack=30 \
-    persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1
+    persist.vendor.radio.mt_sms_ack=30
 
 # Radio (IMS)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -209,13 +193,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
-    ril.subscription.types=NV,RUIM \
     ro.telephony.block_binder_thread_on_incoming_calls=false \
     ro.telephony.call_ring.multiple=false \
     service.qti.ims.enabled=1 \
-    telephony.lteOnCdmaDevice=1 \
-    vendor.service.qti.ims.enabled=1 \
-    ro.telephony.default_network=22,22
+    vendor.service.qti.ims.enabled=1
 
 # Time
 PRODUCT_PROPERTY_OVERRIDES += \
