@@ -9,6 +9,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     Gmail2 \
     Maps \
+    Photos \
     Velvet \
     YouTube \
     AndroidAutoStub \
@@ -16,7 +17,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     GoogleLocationHistory \
     talkback \
     PersonalSafety \
-    FilesPrebuilt \
     Turbo
 
 LOCAL_UNINSTALLABLE_MODULE := true
