@@ -49,8 +49,8 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 
-# ANT+ - from deen_sprout PPKS29.68-16-36-13
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|ce9b89df917622cf1e0e58aa3b3be6e410c4c2d7
+# ANT+ - from deen_sprout - QPKS30.54-22-27
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|4b62afdda74f01a09b62ca0b754c3693f97b3ba0
 
 # Audio ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -771,7 +771,7 @@ vendor/lib/libmmcamera_vstab_module.so
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
 vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
-vendor/lib/libmmcamera_ppeiscore.so|8446e6b88a04d3da1bc6c4466417739a90cbb63c
+vendor/lib/libmmcamera_ppeiscore.so|2ba0e483df2436fd1d2688cbfb1b4d2f489b2009
 vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
 vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
@@ -885,47 +885,47 @@ vendor/etc/qdcm_calib_data_mipi_mot_video_tianma_hd_570.xml
 vendor/etc/qdcm_calib_data_mipi_mot_video_tianma_hd_571.xml
 vendor/etc/qdcm_calib_data_mipi_mot_video_wistron_hd_570.xml
 
-# Fingerprint - from deen_sprout - QPKS30.54-22-12
+# Fingerprint - from deen_sprout - QPKS30.54-22-27
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets|bc775f7e2e9afa615d7b90d9076b0e82a885a917
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc|dbc7ba996d78e8470add38aca9b2966f703beb15
-vendor/etc/init/init.ets.rc|f6c80fe2a7881709daf7089025cd54ae4399fc3d
+vendor/etc/init/init.ets.rc|9129644382c75baa1cb59ad2efc4f69520bdb3cb
 vendor/lib64/libets_fp_et5.so|a629467d966b679eeec75f009748abf61b63b1b6
 vendor/lib64/libets_teeclient.so|5c800a3042828c73f068c35b4c6ddd9d9f6fe48a
 vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so|c39c16ac4c38a5aa8580dad4d2f066e0a5872d98
 
-# Keymaster - from deen_sprout - QPKS30.54-22-12
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|023a0e237fbc068a3191e91e5a1ec0ea5831d52b
+# Keymaster - from deen_sprout - QPKS30.54-22-27
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|ac0aabf396888c9dc8b6dc23291e190daa943e24
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|6a04ddf5b92e97596e3764d2474ca8c26fa80139
 vendor/lib64/libkeymasterdeviceutils.so|5dcb23eb145570876dd1f4f05ca56a114bc9de56
 vendor/lib64/libkeymasterprovision.so|3eb6d2ed05871605cf020bf8459296aea2453f90
-vendor/lib64/libkeymasterutils.so|45cc1a92cf151c56d940c6a7e23d64a207357b9a
+vendor/lib64/libkeymasterutils.so|75d58b3f6aea66220c3352e4bef33dad9333fd1d
 
-# Sensors - from deen_sprout - QPKS30.54-22-11
-vendor/bin/sensors.qti|5f962bb129099f282efd396a36c4e6bed5716dac
-vendor/lib/libsensor1.so|e8e9848a8d9e27f298d2789b365d962c2e7052ac
-vendor/lib/libsensor_reg.so|789af49787bf4f5fe6d99bd99bcced3a3f088ddc
-vendor/lib/sensor_calibrate.so|97424305830c1a3d4e8bf7a7123d3c957b6fc136
-vendor/lib/sensors.rp.so|e83666a495f3280e829e0046c7627d9782ac1577
-vendor/lib/sensors.ssc.so|57ba67c001cb4bcc818a2ad22ef1396d2f60c81d
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|192824e6fd65b8341f21d4bfb1aa0c9e146a8bec
-vendor/lib64/libsensor1.so|cde648fa8af9a5db982f396823a684039f94ac8c
-vendor/lib64/libsensor_reg.so|806c7abfa901028c55d37f4128e2a6de18b8a47b
-vendor/lib64/sensor_calibrate.so|efb71205c08557d2961eff9c7bff20ca89a816d0
-vendor/lib64/sensors.rp.so|45fa1cc519a5fbc7ad359f406f3d125cae54aadc
-vendor/lib64/sensors.ssc.so|60fd557a52a70580b3dda1662820ba315b8b7411
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|e87c7e158e0b12a2fe6abcc3fded9fcff91fa989
+# Sensors - from deen_sprout - QPKS30.54-22-27
+vendor/bin/sensors.qti|d236800766eb407c65b04ee952e3ae867b9c4819
+vendor/lib/libsensor1.so|637aa4ec588533a3dcddb6ed95a7434f1f6b7d59
+vendor/lib/libsensor_reg.so|f81737c08759acc8add3ce87160f1ae24263546d
+vendor/lib/sensor_calibrate.so|53353469aa930cd298d6ff4a1981cc7cebb03d5e
+vendor/lib/sensors.rp.so|e35005a9a8e0aa574bb116490ff0240eb8b9a094
+vendor/lib/sensors.ssc.so|e69b474fd6e94e93b6684935455cc6c9ef5c2192
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|82fae4500ad96d42ef48f9c0c9d00368c34480c5
+vendor/lib64/libsensor1.so|74faeeb9d8679fa1260bbc0cd7aa32cc859204cd
+vendor/lib64/libsensor_reg.so|fc6d0f4021f01ba0d0c2406e7a58dd1af4d21b19
+vendor/lib64/sensor_calibrate.so|47f475a83d6eb59f45a810299116893c91acf79e
+vendor/lib64/sensors.rp.so|c792a29071b6e8521e205b0d0e87a96401407618
+vendor/lib64/sensors.ssc.so|761d2b907b60176a8ef77e7f9296337b936a5351
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|4ca1d6dbe9acfbc762234b622ab2e7fa3328275d
 
-# Gatekeeper - from deen_sprout QPKS30.54-22-12
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|eeb4ba9eacb57c958051a47d307968254ee081d0
+# Gatekeeper - from deen_sprout - QPKS30.54-22-27
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|8c5a8f0bec5942dc3527cff95ae09959234e9e58
 
 # Gatekeeper (hardware) - from LA.UM.9.6.3.r1-06200-89xx.0
 vendor/lib64/hw/gatekeeper.msm8937.so|7be56a403c30f093865f08bf0f0335aeb99ec7fd
 
-# FM - from deen_sprout PPKS29.68-16-36-13
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|b72b6bc0f79ef8289f4b543910e7e2d91961831f
+# FM - from deen_sprout - QPKS30.54-22-27
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|b7358cd2a52e6e0798efa01f9595f8b8e8f7b152
 
 # Graphics - from X00RD - QKQ1.191002.002-17.07.2003.405-20200330
 vendor/lib/egl/eglSubDriverAndroid.so|c90099d92d885e3533008cb422d872f6ebebc6d4
@@ -1239,7 +1239,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|7c89ba68743fc5e03b64e22baed6717fc09
 
 # Radio (IMS VT) - from LA.UM.9.6.3.r1-04400-89xx.0
 system_ext/lib64/lib-imscamera.so|49ead972646b09d700556d63676673b3e8af2036
-system_ext/lib64/lib-imsvideocodec.so|dbe6130328a2ed270c123bba8913bae38ac763bc
+system_ext/lib64/lib-imsvideocodec.so|883ee01b34cbab75eb57cdd7cdbc9acb04c79961
 system_ext/lib64/lib-imsvt.so|4f96cc5f27551d0b6cb11ad6447d9ce8829dde47
 system_ext/lib64/lib-imsvtextutils.so|1acf1de305e455a3a924483e5652b37133d10fd1
 system_ext/lib64/lib-imsvtutils.so|dfc5cf0854fe38c191a53ec3bd2a322d05d85567
