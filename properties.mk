@@ -160,16 +160,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pedometer=false \
     ro.hardware.sensors=aljeter
 
-# Telephony
-PRODUCT_PROPERTY_OVERRIDES += \
-    ril.subscription.types=NV,RUIM \
-    ro.telephony.block_binder_thread_on_incoming_calls=false \
-    ro.telephony.call_ring.multiple=false \
-    service.qti.ims.enabled=1 \
-    telephony.lteOnCdmaDevice=1 \
-    vendor.service.qti.ims.enabled=1 \
-    ro.telephony.default_network=22,22
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
@@ -193,6 +183,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.sar_sensor=1 \
+    ro.vendor.sensors.pmd=false \
+    ro.vendor.sensors.rmd=false \
+    ro.vendor.sensors.smd=false \
+    ro.vendor.sdk.sensors.gestures=false \
+    ro.vendor.sensors.facing=false \
+    ro.vendor.sensors.scrn_ortn=false \
+    ro.vendor.sensors.cmc=false \
+    ro.vendor.sensors.pedometer=false \
+    ro.hardware.sensors=aljeter
+
 # SoC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.model=MSM8937
@@ -204,6 +207,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     renderthread.skia.reduceopstasksplitting=true \
     debug.hwui.skia_atrace_enabled=false
 
+# Telephony
+PRODUCT_PROPERTY_OVERRIDES += \
+    ril.subscription.types=NV,RUIM \
+    ro.telephony.block_binder_thread_on_incoming_calls=false \
+    ro.telephony.call_ring.multiple=false \
+    service.qti.ims.enabled=1 \
+    telephony.lteOnCdmaDevice=1 \
+    vendor.service.qti.ims.enabled=1 \
+    ro.telephony.default_network=22,22
+
+# Time
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.delta_time.enable=true
+
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.bpt=2ec1 \
@@ -214,10 +231,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.mtp_adb=2e76 \
     ro.usb.ptp=2e83 \
     ro.usb.ptp_adb=2e84
-
-# Time
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.delta_time.enable=true
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
