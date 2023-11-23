@@ -1058,12 +1058,12 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|18409cdc00dca614a301094aecf
 vendor/lib64/libdisp-aba.so|9404f35516077caabcaa06e9c62e142feee1fe26
 vendor/lib64/libdisplayconfig.qti.so|e2a3971b331620828a6a7163b15170aad9935754
 
-# QMI (diag) - from LA.UM.9.6.3.r1-06200-89xx.0
+# QMI (diag) - from LA.UM.9.6.3.r1-04400-89xx.0
 vendor/bin/irsc_util|121deb2d6fd21b122c6a8ca8b30ef167f6b90f61
-vendor/lib/libdiag.so|1a946b18fcd5de254df8d631cd7677f595b3b2c8
-vendor/lib64/libdiag.so|8d92025445dcf905778a15e76adc1afdc3395642
+vendor/lib/libdiag.so|de6da6f0de0867e03f5c5463089ee6eeb82ff6a9
+vendor/lib64/libdiag.so|35818f0fe8086752bd7292fb6be83dfa90d5de55
 
-# QMI (shared dependencies) - LA.UM.9.6.3.r1-06200-89xx.0
+# QMI (shared dependencies) - LA.UM.9.6.3.r1-04400-89xx.0
 vendor/lib/libdsi_netctrl.so|7893cdd6d0f656f9d5f1193fa074713ac0d8682f
 vendor/lib/libdsutils.so|6395b4702d3bfcf705b16318f5d0adcce24f90e1
 vendor/lib/libidl.so|651e104b88449c15df430d7dfc8480e7fe33a7ce
