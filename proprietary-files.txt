@@ -767,17 +767,6 @@ vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera_vstab_module.so
 
-# Camera - from vince
-vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
-vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
-vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
-vendor/lib/libmmcamera_ppeiscore.so|2ba0e483df2436fd1d2688cbfb1b4d2f489b2009
-vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
-vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
-vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
-vendor/lib/libtrueportrait.so|8d5c3f733a6351610f70592bd65f7461e0c55135
-vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
-
 # CNE - from LA.UM.9.6.3.r1-04400-89xx.0
 -vendor/app/CneApp/CneApp.apk|6e355ca21e53c8a84794f06e1057e62ff2df1a58
 -vendor/app/IWlanService/IWlanService.apk|08472592f4a21ad806c487fc0c70c10bbe7c7ac2

@@ -318,7 +318,6 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libui_shim \
     libgui_shim
 
 # Soong namespaces

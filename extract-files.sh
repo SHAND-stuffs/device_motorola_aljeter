@@ -26,10 +26,6 @@ source "${HELPER}"
 
 function blob_fixup() {
     case "${1}" in
-	vendor/lib/libmmcamera_ppeiscore.so)
-	    "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
-	    ;;
-
         system_ext/lib64/lib-imsvideocodec.so)
             "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
 	    ;;
