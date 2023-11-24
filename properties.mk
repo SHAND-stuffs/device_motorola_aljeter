@@ -65,7 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
+    ro.charger.enable_suspend=0
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
