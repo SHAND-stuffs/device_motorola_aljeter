@@ -194,7 +194,7 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa_supplicant 0770 wifi wifi
     mkdir /data/vendor/wifi/wigig_hostapd 0770 wifi wifi
 
-    #create ipacm log dir
+    # create ipacm log dir
     mkdir /data/vendor/ipa 0770 radio radio
     chmod 0770 /data/vendor/ipa
 
@@ -203,7 +203,8 @@ on post-fs-data
     chown radio radio /data/vendor/connectivity
 
     # Create directory for radio
-    mkdir /data/vendor/radio 0770 system radio
+     mkdir /data/vendor/radio 0770 system radio
+     rm /data/vendor/radio/shmbus
 
     # Create directory for modem_config
     mkdir /data/vendor/modem_config 0570 radio root
@@ -241,10 +242,14 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
-    #Create a folder for SRS to be able to create a usercfg file
+    # Create a folder for SRS to be able to create a usercfg file
     mkdir /data/data/media 0770 media media
 
-    #Create PERFD deamon related dirs
+    # Create FM dir for patchdownloader
+    mkdir /data/vendor/fm 0770 system system
+    chmod 0770 /data/vendor/fm
+
+    # Create PERFD deamon related dirs
     mkdir /data/vendor/perfd 0770 root system
     chmod 2770 /data/vendor/perfd
     rm /data/vendor/perfd/default_values
@@ -255,9 +260,9 @@ on post-fs-data
     chmod 0660 /data/vendor/radio/copy_complete
 
     # Secure Element directory for loader service functionality
-    mkdir /data/vendor/secure_element 0770 secure_element secure_element
+    mkdir /data/vendor/secure_element 0777 system system
 
-        # Mark the copy complete flag to not completed
+    # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
     chown radio radio /data/vendor/radio/copy_complete
     chmod 0660 /data/vendor/radio/copy_complete
@@ -266,6 +271,11 @@ on post-fs-data
     copy /vendor/radio/qcril_database/qcril.db /data/vendor/radio/qcril_prebuilt.db
     chown radio radio /data/vendor/radio/qcril_prebuilt.db
     chmod 0660 /data/vendor/radio/qcril_prebuilt.db
+    copy /vendor/radio/qcril_database/qcrilNr.db /data/vendor/radio/qcrilNr_prebuilt.db
+    copy /vendor/etc/qcril_database/qcrilNr.db /data/vendor/radio/qcrilNr_prebuilt.db
+    chown radio radio /data/vendor/radio/qcrilNr_prebuilt.db
+    chmod 0660 /data/vendor/radio/qcrilNr_prebuilt.db
+
     # File flags for prebuilt ril db file
     write /data/vendor/radio/prebuilt_db_support 1
     chown radio radio /data/vendor/radio/prebuilt_db_support
@@ -307,12 +317,6 @@ on property:sys.boot_completed=1
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
-
-# DSDS - Restart qcrild on data switch
-on property:persist.sys.radio.mobile_data_swap=1
-    restart vendor.qcrild
-    exec /bin/sleep 2
-    restart vendor.qcrild2
 
 on property:vendor.radio.atfwd.start=false
     stop vendor.atfwd
@@ -385,6 +389,13 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system
     group system radio
+
+# Set vendor-ril lib path based on Meta version
+on property:vendor.rild.libpath=*
+    setprop rild.libpath ${vendor.rild.libpath}
+
+on property:ro.vendor.radio.noril=*
+    setprop ro.radio.noril ${ro.vendor.radio.noril}
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
