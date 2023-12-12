@@ -276,6 +276,7 @@ TARGET_COMMON_QTI_COMPONENTS += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    libsensorndkbridge \
     librmnetctl
 
 # Recovery
